@@ -1,6 +1,8 @@
 Xbox One Controller Enabler
 ===========================
 
+![alt tag](https://raw.github.com/guilhermearaujo/xboxonecontrollerenabler/master/screenshot.png)
+
 What is it?
 -----------
 
