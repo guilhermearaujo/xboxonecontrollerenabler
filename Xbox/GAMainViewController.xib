@@ -47,11 +47,11 @@
                     <tabViewItems>
                         <tabViewItem label="Controller 1" identifier="1" id="kDg-ET-P2v">
                             <view key="view" ambiguous="YES" id="veh-4b-VBp">
-                                <rect key="frame" x="10" y="33" width="492" height="193"/>
+                                <rect key="frame" x="10" y="33" width="79" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <box autoresizesSubviews="NO" fixedFrame="YES" title="Settings" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="d4U-qW-dMH">
-                                        <rect key="frame" x="3" y="25" width="143" height="170"/>
+                                        <rect key="frame" x="3" y="-168" width="143" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView">
                                             <rect key="frame" x="1" y="1" width="141" height="168"/>
@@ -102,7 +102,7 @@
                                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </box>
                                     <box fixedFrame="YES" title="Buttons" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="aaB-R4-Gwu">
-                                        <rect key="frame" x="148" y="25" width="341" height="170"/>
+                                        <rect key="frame" x="148" y="-168" width="341" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView">
                                             <rect key="frame" x="1" y="1" width="339" height="168"/>
@@ -265,7 +265,7 @@
                                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </box>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="huH-f3-ofK">
-                                        <rect key="frame" x="4" y="4" width="484" height="17"/>
+                                        <rect key="frame" x="4" y="-189" width="484" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Controller disconnected." id="NDW-iA-Tjd">
                                             <font key="font" metaFont="system"/>
