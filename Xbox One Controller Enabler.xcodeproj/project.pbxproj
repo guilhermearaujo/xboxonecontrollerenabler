@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7916EAF118E75C510064C241 /* WirtualJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7916EAF018E75C510064C241 /* WirtualJoy.framework */; };
+		7916EAF218E75C590064C241 /* VHID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FB077818E66EDF0007BAD1 /* VHID.framework */; };
+		7916EAF418E765B20064C241 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FB06D118E397C70007BAD1 /* MainMenu.xib */; };
+		7916EAF718E76BD80064C241 /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 7916EAF518E76BD80064C241 /* off.png */; };
+		7916EAF818E76BD80064C241 /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 7916EAF618E76BD80064C241 /* on.png */; };
+		7916EB0518E771480064C241 /* WirtualJoy.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7916EAF018E75C510064C241 /* WirtualJoy.framework */; };
+		7916EB0618E771730064C241 /* VHID.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 79FB077818E66EDF0007BAD1 /* VHID.framework */; };
+		7916EB0718E771820064C241 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FB072A18E4DA8F0007BAD1 /* IOKit.framework */; };
+		7916EB0818E771850064C241 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FB06BC18E397C70007BAD1 /* Cocoa.framework */; };
+		79FB06C718E397C70007BAD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79FB06C518E397C70007BAD1 /* InfoPlist.strings */; };
+		79FB06C918E397C70007BAD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB06C818E397C70007BAD1 /* main.m */; };
+		79FB06CD18E397C70007BAD1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 79FB06CB18E397C70007BAD1 /* Credits.rtf */; };
+		79FB06D018E397C70007BAD1 /* GAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB06CF18E397C70007BAD1 /* GAAppDelegate.m */; };
+		79FB06D518E397C70007BAD1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79FB06D418E397C70007BAD1 /* Images.xcassets */; };
+		79FB073B18E6252E0007BAD1 /* GAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB073918E6252E0007BAD1 /* GAMainViewController.m */; };
+		79FB073C18E6252E0007BAD1 /* GAMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FB073A18E6252E0007BAD1 /* GAMainViewController.xib */; };
+		79FB073F18E62BAD0007BAD1 /* GAXboxControllerCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB073E18E62BAD0007BAD1 /* GAXboxControllerCommunication.m */; };
+		79FB074318E63F380007BAD1 /* GAXboxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB074218E63F380007BAD1 /* GAXboxController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79FB077718E66EDF0007BAD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FB077118E66EDE0007BAD1 /* VHID.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = VHID;
+		};
+		79FB077918E66EDF0007BAD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FB077118E66EDE0007BAD1 /* VHID.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A18416515BE8D7C00F223E4;
+			remoteInfo = Test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7916EB0318E7711D0064C241 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7916EB0618E771730064C241 /* VHID.framework in Copy Frameworks */,
+				7916EB0518E771480064C241 /* WirtualJoy.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7916EAF018E75C510064C241 /* WirtualJoy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WirtualJoy.framework; path = "../../Library/Developer/Xcode/DerivedData/Xbox-ghwsalepozbpccdjvccqbjjmccoh/Build/Products/Debug/WirtualJoy.framework"; sourceTree = "<group>"; };
+		7916EAF518E76BD80064C241 /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		7916EAF618E76BD80064C241 /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		79FB06B918E397C70007BAD1 /* Xbox One Controller Enabler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xbox One Controller Enabler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FB06BC18E397C70007BAD1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		79FB06BF18E397C70007BAD1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		79FB06C018E397C70007BAD1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		79FB06C118E397C70007BAD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79FB06C418E397C70007BAD1 /* Xbox One Controller Enabler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Xbox One Controller Enabler-Info.plist"; sourceTree = "<group>"; };
+		79FB06C618E397C70007BAD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79FB06C818E397C70007BAD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79FB06CA18E397C70007BAD1 /* Xbox One Controller Enabler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Xbox One Controller Enabler-Prefix.pch"; sourceTree = "<group>"; };
+		79FB06CC18E397C70007BAD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		79FB06CE18E397C70007BAD1 /* GAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAAppDelegate.h; sourceTree = "<group>"; };
+		79FB06CF18E397C70007BAD1 /* GAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAAppDelegate.m; sourceTree = "<group>"; };
+		79FB06D218E397C70007BAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		79FB06D418E397C70007BAD1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		79FB072A18E4DA8F0007BAD1 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		79FB073818E6252E0007BAD1 /* GAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAMainViewController.h; sourceTree = "<group>"; };
+		79FB073918E6252E0007BAD1 /* GAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAMainViewController.m; sourceTree = "<group>"; };
+		79FB073A18E6252E0007BAD1 /* GAMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GAMainViewController.xib; sourceTree = "<group>"; };
+		79FB073D18E62BAD0007BAD1 /* GAXboxControllerCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAXboxControllerCommunication.h; sourceTree = "<group>"; };
+		79FB073E18E62BAD0007BAD1 /* GAXboxControllerCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAXboxControllerCommunication.m; sourceTree = "<group>"; };
+		79FB074018E62CFC0007BAD1 /* XboxOneButtonMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XboxOneButtonMap.h; sourceTree = "<group>"; };
+		79FB074118E63F380007BAD1 /* GAXboxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAXboxController.h; sourceTree = "<group>"; };
+		79FB074218E63F380007BAD1 /* GAXboxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAXboxController.m; sourceTree = "<group>"; };
+		79FB077118E66EDE0007BAD1 /* VHID.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VHID.xcodeproj; path = VHID/VHID.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79FB06B618E397C70007BAD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7916EB0818E771850064C241 /* Cocoa.framework in Frameworks */,
+				7916EB0718E771820064C241 /* IOKit.framework in Frameworks */,
+				7916EAF218E75C590064C241 /* VHID.framework in Frameworks */,
+				7916EAF118E75C510064C241 /* WirtualJoy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79FB06B018E397C70007BAD1 = {
+			isa = PBXGroup;
+			children = (
+				79FB077118E66EDE0007BAD1 /* VHID.xcodeproj */,
+				79FB06C218E397C70007BAD1 /* Xbox */,
+				79FB06BB18E397C70007BAD1 /* Frameworks */,
+				79FB06BA18E397C70007BAD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79FB06BA18E397C70007BAD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79FB06B918E397C70007BAD1 /* Xbox One Controller Enabler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79FB06BB18E397C70007BAD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7916EAF018E75C510064C241 /* WirtualJoy.framework */,
+				79FB072A18E4DA8F0007BAD1 /* IOKit.framework */,
+				79FB06BC18E397C70007BAD1 /* Cocoa.framework */,
+				79FB06BE18E397C70007BAD1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79FB06BE18E397C70007BAD1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79FB06BF18E397C70007BAD1 /* AppKit.framework */,
+				79FB06C018E397C70007BAD1 /* CoreData.framework */,
+				79FB06C118E397C70007BAD1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		79FB06C218E397C70007BAD1 /* Xbox */ = {
+			isa = PBXGroup;
+			children = (
+				7916EAF518E76BD80064C241 /* off.png */,
+				7916EAF618E76BD80064C241 /* on.png */,
+				79FB06CE18E397C70007BAD1 /* GAAppDelegate.h */,
+				79FB06CF18E397C70007BAD1 /* GAAppDelegate.m */,
+				79FB073818E6252E0007BAD1 /* GAMainViewController.h */,
+				79FB073918E6252E0007BAD1 /* GAMainViewController.m */,
+				79FB073A18E6252E0007BAD1 /* GAMainViewController.xib */,
+				79FB074118E63F380007BAD1 /* GAXboxController.h */,
+				79FB074218E63F380007BAD1 /* GAXboxController.m */,
+				79FB073D18E62BAD0007BAD1 /* GAXboxControllerCommunication.h */,
+				79FB073E18E62BAD0007BAD1 /* GAXboxControllerCommunication.m */,
+				79FB06D118E397C70007BAD1 /* MainMenu.xib */,
+				79FB074018E62CFC0007BAD1 /* XboxOneButtonMap.h */,
+				79FB06D418E397C70007BAD1 /* Images.xcassets */,
+				79FB06C318E397C70007BAD1 /* Supporting Files */,
+			);
+			path = Xbox;
+			sourceTree = "<group>";
+		};
+		79FB06C318E397C70007BAD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79FB06C418E397C70007BAD1 /* Xbox One Controller Enabler-Info.plist */,
+				79FB06C518E397C70007BAD1 /* InfoPlist.strings */,
+				79FB06C818E397C70007BAD1 /* main.m */,
+				79FB06CA18E397C70007BAD1 /* Xbox One Controller Enabler-Prefix.pch */,
+				79FB06CB18E397C70007BAD1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79FB077218E66EDE0007BAD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79FB077818E66EDF0007BAD1 /* VHID.framework */,
+				79FB077A18E66EDF0007BAD1 /* Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79FB06B818E397C70007BAD1 /* Xbox One Controller Enabler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79FB06EA18E397C70007BAD1 /* Build configuration list for PBXNativeTarget "Xbox One Controller Enabler" */;
+			buildPhases = (
+				79FB06B518E397C70007BAD1 /* Sources */,
+				79FB06B618E397C70007BAD1 /* Frameworks */,
+				79FB06B718E397C70007BAD1 /* Resources */,
+				7916EB0318E7711D0064C241 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Xbox One Controller Enabler";
+			productName = Xbox;
+			productReference = 79FB06B918E397C70007BAD1 /* Xbox One Controller Enabler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79FB06B118E397C70007BAD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Guilherme Araújo";
+			};
+			buildConfigurationList = 79FB06B418E397C70007BAD1 /* Build configuration list for PBXProject "Xbox One Controller Enabler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79FB06B018E397C70007BAD1;
+			productRefGroup = 79FB06BA18E397C70007BAD1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 79FB077218E66EDE0007BAD1 /* Products */;
+					ProjectRef = 79FB077118E66EDE0007BAD1 /* VHID.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				79FB06B818E397C70007BAD1 /* Xbox One Controller Enabler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		79FB077818E66EDF0007BAD1 /* VHID.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VHID.framework;
+			remoteRef = 79FB077718E66EDF0007BAD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79FB077A18E66EDF0007BAD1 /* Test.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Test.app;
+			remoteRef = 79FB077918E66EDF0007BAD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79FB06B718E397C70007BAD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7916EAF418E765B20064C241 /* MainMenu.xib in Resources */,
+				79FB06C718E397C70007BAD1 /* InfoPlist.strings in Resources */,
+				7916EAF718E76BD80064C241 /* off.png in Resources */,
+				79FB06D518E397C70007BAD1 /* Images.xcassets in Resources */,
+				79FB06CD18E397C70007BAD1 /* Credits.rtf in Resources */,
+				7916EAF818E76BD80064C241 /* on.png in Resources */,
+				79FB073C18E6252E0007BAD1 /* GAMainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79FB06B518E397C70007BAD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FB073B18E6252E0007BAD1 /* GAMainViewController.m in Sources */,
+				79FB073F18E62BAD0007BAD1 /* GAXboxControllerCommunication.m in Sources */,
+				79FB074318E63F380007BAD1 /* GAXboxController.m in Sources */,
+				79FB06D018E397C70007BAD1 /* GAAppDelegate.m in Sources */,
+				79FB06C918E397C70007BAD1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79FB06C518E397C70007BAD1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79FB06C618E397C70007BAD1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79FB06CB18E397C70007BAD1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79FB06CC18E397C70007BAD1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		79FB06D118E397C70007BAD1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79FB06D218E397C70007BAD1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79FB06E818E397C70007BAD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		79FB06E918E397C70007BAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		79FB06EB18E397C70007BAD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Xbox-ghwsalepozbpccdjvccqbjjmccoh/Build/Products/Debug",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Xbox/Xbox One Controller Enabler-Prefix.pch";
+				INFOPLIST_FILE = "Xbox/Xbox One Controller Enabler-Info.plist";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "-lusb-1.0";
+				PRODUCT_NAME = "Xbox One Controller Enabler";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79FB06EC18E397C70007BAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Xbox-ghwsalepozbpccdjvccqbjjmccoh/Build/Products/Debug",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Xbox/Xbox One Controller Enabler-Prefix.pch";
+				INFOPLIST_FILE = "Xbox/Xbox One Controller Enabler-Info.plist";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "-lusb-1.0";
+				PRODUCT_NAME = "Xbox One Controller Enabler";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79FB06B418E397C70007BAD1 /* Build configuration list for PBXProject "Xbox One Controller Enabler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79FB06E818E397C70007BAD1 /* Debug */,
+				79FB06E918E397C70007BAD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79FB06EA18E397C70007BAD1 /* Build configuration list for PBXNativeTarget "Xbox One Controller Enabler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79FB06EB18E397C70007BAD1 /* Debug */,
+				79FB06EC18E397C70007BAD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79FB06B118E397C70007BAD1 /* Project object */;
+}

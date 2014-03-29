@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1CB29D15B00E7A0012FCC7 /* wirtual_joy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CB29B15B00E7A0012FCC7 /* wirtual_joy.cpp */; };
+		0A1CB2C315B015BA0012FCC7 /* wirtual_joy_user_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CB2C115B015BA0012FCC7 /* wirtual_joy_user_client.cpp */; };
+		0A1CB50615B03FA10012FCC7 /* wirtual_joy_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CB50415B03FA10012FCC7 /* wirtual_joy_device.cpp */; };
+		0A46959415B58CEE003AB8FD /* WJoyToolMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A46928615B578CB003AB8FD /* WJoyToolMain.m */; };
+		0A46961415B593D4003AB8FD /* WJoyDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4691E715B56A1A003AB8FD /* WJoyDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A46961B15B593DB003AB8FD /* wjoy.kext in Resources */ = {isa = PBXBuildFile; fileRef = 32D94FD00562CBF700B6AF17 /* wjoy.kext */; };
+		0A46961C15B593DB003AB8FD /* WJoyTool in Resources */ = {isa = PBXBuildFile; fileRef = 0A46958E15B58CE1003AB8FD /* WJoyTool */; };
+		0A46962015B593E7003AB8FD /* WJoyAdminToolRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A46924D15B571E8003AB8FD /* WJoyAdminToolRight.m */; };
+		0A46962115B593E7003AB8FD /* WJoyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A46959E15B58D5A003AB8FD /* WJoyTool.m */; };
+		0A46962215B593E7003AB8FD /* WJoyDeviceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4691EF15B56A51003AB8FD /* WJoyDeviceImpl.m */; };
+		0A46962315B593E7003AB8FD /* WJoyDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4691E815B56A1A003AB8FD /* WJoyDevice.m */; };
+		0A46966815B593F6003AB8FD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1CB32615B022BD0012FCC7 /* IOKit.framework */; };
+		0A46966915B593F6003AB8FD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A46925815B571F7003AB8FD /* Security.framework */; };
+		0A4696EC15B59587003AB8FD /* WirtualJoy.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0A46960715B593A2003AB8FD /* WirtualJoy.framework */; };
+		0A4696F915B595F1003AB8FD /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4696F815B595F1003AB8FD /* test.m */; };
+		0A46971615B5970A003AB8FD /* WirtualJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A46960715B593A2003AB8FD /* WirtualJoy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A46960D15B593A7003AB8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D94FC30562CBF700B6AF17;
+			remoteInfo = wjoy;
+		};
+		0A46960F15B593A7003AB8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A46958D15B58CE1003AB8FD;
+			remoteInfo = WJoyTool;
+		};
+		0A4696EA15B59583003AB8FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A46960615B593A2003AB8FD;
+			remoteInfo = WirtualJoy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A4696E915B5957B003AB8FD /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A4696EC15B59587003AB8FD /* WirtualJoy.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A1CB29A15B00E7A0012FCC7 /* wirtual_joy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wirtual_joy.h; sourceTree = "<group>"; };
+		0A1CB29B15B00E7A0012FCC7 /* wirtual_joy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wirtual_joy.cpp; sourceTree = "<group>"; };
+		0A1CB2C015B015BA0012FCC7 /* wirtual_joy_user_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wirtual_joy_user_client.h; sourceTree = "<group>"; };
+		0A1CB2C115B015BA0012FCC7 /* wirtual_joy_user_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wirtual_joy_user_client.cpp; sourceTree = "<group>"; };
+		0A1CB32615B022BD0012FCC7 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		0A1CB50315B03FA10012FCC7 /* wirtual_joy_device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wirtual_joy_device.h; sourceTree = "<group>"; };
+		0A1CB50415B03FA10012FCC7 /* wirtual_joy_device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wirtual_joy_device.cpp; sourceTree = "<group>"; };
+		0A4691E715B56A1A003AB8FD /* WJoyDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJoyDevice.h; sourceTree = "<group>"; };
+		0A4691E815B56A1A003AB8FD /* WJoyDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJoyDevice.m; sourceTree = "<group>"; };
+		0A4691EE15B56A51003AB8FD /* WJoyDeviceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJoyDeviceImpl.h; sourceTree = "<group>"; };
+		0A4691EF15B56A51003AB8FD /* WJoyDeviceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJoyDeviceImpl.m; sourceTree = "<group>"; };
+		0A46924C15B571E8003AB8FD /* WJoyAdminToolRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJoyAdminToolRight.h; sourceTree = "<group>"; };
+		0A46924D15B571E8003AB8FD /* WJoyAdminToolRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJoyAdminToolRight.m; sourceTree = "<group>"; };
+		0A46925815B571F7003AB8FD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0A46928615B578CB003AB8FD /* WJoyToolMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJoyToolMain.m; sourceTree = "<group>"; };
+		0A4692C315B57A1F003AB8FD /* WJoyToolInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJoyToolInterface.h; sourceTree = "<group>"; };
+		0A46958E15B58CE1003AB8FD /* WJoyTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WJoyTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A46959D15B58D5A003AB8FD /* WJoyTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJoyTool.h; sourceTree = "<group>"; };
+		0A46959E15B58D5A003AB8FD /* WJoyTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJoyTool.m; sourceTree = "<group>"; };
+		0A46960715B593A2003AB8FD /* WirtualJoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WirtualJoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A46960815B593A2003AB8FD /* WirtualJoy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WirtualJoy-Info.plist"; sourceTree = "<group>"; };
+		0A4696CE15B5953E003AB8FD /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4696D015B5953E003AB8FD /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		0A4696F815B595F1003AB8FD /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		0A469B1115B5AD59003AB8FD /* wirtual_joy_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wirtual_joy_config.h; sourceTree = "<group>"; };
+		0A469B1215B5AD59003AB8FD /* wirtual_joy_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wirtual_joy_debug.h; sourceTree = "<group>"; };
+		32D94FCF0562CBF700B6AF17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D94FD00562CBF700B6AF17 /* wjoy.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wjoy.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA8362C06AD9B9200E5AC22 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A46958C15B58CE1003AB8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A46960515B593A2003AB8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A46966815B593F6003AB8FD /* IOKit.framework in Frameworks */,
+				0A46966915B593F6003AB8FD /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4696CC15B5953E003AB8FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A46971615B5970A003AB8FD /* WirtualJoy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D94FCB0562CBF700B6AF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* wjoy */ = {
+			isa = PBXGroup;
+			children = (
+				247142CAFF3F8F9811CA285C /* Source */,
+				0A468D5815B56812003AB8FD /* Frameworks */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = wjoy;
+			sourceTree = "<group>";
+		};
+		0A1CB31015B0221F0012FCC7 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				0A4696D015B5953E003AB8FD /* Test-Info.plist */,
+				0A4696F815B595F1003AB8FD /* test.m */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		0A468D5815B56812003AB8FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DA8362C06AD9B9200E5AC22 /* Kernel.framework */,
+				0A1CB32615B022BD0012FCC7 /* IOKit.framework */,
+				0A46925815B571F7003AB8FD /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A4691BE15B568A7003AB8FD /* driver */ = {
+			isa = PBXGroup;
+			children = (
+				0A469B1115B5AD59003AB8FD /* wirtual_joy_config.h */,
+				0A469B1215B5AD59003AB8FD /* wirtual_joy_debug.h */,
+				0A1CB50315B03FA10012FCC7 /* wirtual_joy_device.h */,
+				0A1CB50415B03FA10012FCC7 /* wirtual_joy_device.cpp */,
+				0A1CB2C015B015BA0012FCC7 /* wirtual_joy_user_client.h */,
+				0A1CB2C115B015BA0012FCC7 /* wirtual_joy_user_client.cpp */,
+				0A1CB29A15B00E7A0012FCC7 /* wirtual_joy.h */,
+				0A1CB29B15B00E7A0012FCC7 /* wirtual_joy.cpp */,
+				32D94FCF0562CBF700B6AF17 /* Info.plist */,
+			);
+			name = driver;
+			sourceTree = "<group>";
+		};
+		0A4691D915B5693B003AB8FD /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				0A4691EB15B56A2A003AB8FD /* internal */,
+				0A4691E715B56A1A003AB8FD /* WJoyDevice.h */,
+				0A4691E815B56A1A003AB8FD /* WJoyDevice.m */,
+				0A46960815B593A2003AB8FD /* WirtualJoy-Info.plist */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		0A4691EB15B56A2A003AB8FD /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				0A4691BE15B568A7003AB8FD /* driver */,
+				0A46928315B578A5003AB8FD /* tool */,
+				0A4691EE15B56A51003AB8FD /* WJoyDeviceImpl.h */,
+				0A4691EF15B56A51003AB8FD /* WJoyDeviceImpl.m */,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		0A46928315B578A5003AB8FD /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				0A4692C315B57A1F003AB8FD /* WJoyToolInterface.h */,
+				0A46924C15B571E8003AB8FD /* WJoyAdminToolRight.h */,
+				0A46924D15B571E8003AB8FD /* WJoyAdminToolRight.m */,
+				0A46959D15B58D5A003AB8FD /* WJoyTool.h */,
+				0A46959E15B58D5A003AB8FD /* WJoyTool.m */,
+				0A46928615B578CB003AB8FD /* WJoyToolMain.m */,
+			);
+			name = tool;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32D94FD00562CBF700B6AF17 /* wjoy.kext */,
+				0A46958E15B58CE1003AB8FD /* WJoyTool */,
+				0A46960715B593A2003AB8FD /* WirtualJoy.framework */,
+				0A4696CE15B5953E003AB8FD /* Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0A4691D915B5693B003AB8FD /* framework */,
+				0A1CB31015B0221F0012FCC7 /* test */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A46960215B593A2003AB8FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A46961415B593D4003AB8FD /* WJoyDevice.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A46958D15B58CE1003AB8FD /* WJoyTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A46959215B58CEC003AB8FD /* Build configuration list for PBXNativeTarget "WJoyTool" */;
+			buildPhases = (
+				0A46958B15B58CE1003AB8FD /* Sources */,
+				0A46958C15B58CE1003AB8FD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WJoyTool;
+			productName = WJoyTool;
+			productReference = 0A46958E15B58CE1003AB8FD /* WJoyTool */;
+			productType = "com.apple.product-type.tool";
+		};
+		0A46960615B593A2003AB8FD /* WirtualJoy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A46960C15B593A2003AB8FD /* Build configuration list for PBXNativeTarget "WirtualJoy" */;
+			buildPhases = (
+				0A46960215B593A2003AB8FD /* Headers */,
+				0A46960315B593A2003AB8FD /* Resources */,
+				0A46960415B593A2003AB8FD /* Sources */,
+				0A46960515B593A2003AB8FD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A46960E15B593A7003AB8FD /* PBXTargetDependency */,
+				0A46961015B593A7003AB8FD /* PBXTargetDependency */,
+			);
+			name = WirtualJoy;
+			productName = WirtualJoy;
+			productReference = 0A46960715B593A2003AB8FD /* WirtualJoy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0A4696CD15B5953E003AB8FD /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4696D315B5953F003AB8FD /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				0A4696CA15B5953E003AB8FD /* Resources */,
+				0A4696CB15B5953E003AB8FD /* Sources */,
+				0A4696CC15B5953E003AB8FD /* Frameworks */,
+				0A4696E915B5957B003AB8FD /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A4696EB15B59583003AB8FD /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Test;
+			productReference = 0A4696CE15B5953E003AB8FD /* Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32D94FC30562CBF700B6AF17 /* wjoy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91D908733DB10010E9CD /* Build configuration list for PBXNativeTarget "wjoy" */;
+			buildPhases = (
+				32D94FC70562CBF700B6AF17 /* Resources */,
+				32D94FC90562CBF700B6AF17 /* Sources */,
+				32D94FCB0562CBF700B6AF17 /* Frameworks */,
+				32D94FCC0562CBF700B6AF17 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wjoy;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = wjoy;
+			productReference = 32D94FD00562CBF700B6AF17 /* wjoy.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 1DEB91DD08733DB10010E9CD /* Build configuration list for PBXProject "WirtualJoy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* wjoy */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32D94FC30562CBF700B6AF17 /* wjoy */,
+				0A46958D15B58CE1003AB8FD /* WJoyTool */,
+				0A46960615B593A2003AB8FD /* WirtualJoy */,
+				0A4696CD15B5953E003AB8FD /* Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A46960315B593A2003AB8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A46961B15B593DB003AB8FD /* wjoy.kext in Resources */,
+				0A46961C15B593DB003AB8FD /* WJoyTool in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4696CA15B5953E003AB8FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D94FC70562CBF700B6AF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		32D94FCC0562CBF700B6AF17 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A46958B15B58CE1003AB8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A46959415B58CEE003AB8FD /* WJoyToolMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A46960415B593A2003AB8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A46962015B593E7003AB8FD /* WJoyAdminToolRight.m in Sources */,
+				0A46962115B593E7003AB8FD /* WJoyTool.m in Sources */,
+				0A46962215B593E7003AB8FD /* WJoyDeviceImpl.m in Sources */,
+				0A46962315B593E7003AB8FD /* WJoyDevice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4696CB15B5953E003AB8FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4696F915B595F1003AB8FD /* test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D94FC90562CBF700B6AF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1CB29D15B00E7A0012FCC7 /* wirtual_joy.cpp in Sources */,
+				0A1CB2C315B015BA0012FCC7 /* wirtual_joy_user_client.cpp in Sources */,
+				0A1CB50615B03FA10012FCC7 /* wirtual_joy_device.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A46960E15B593A7003AB8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D94FC30562CBF700B6AF17 /* wjoy */;
+			targetProxy = 0A46960D15B593A7003AB8FD /* PBXContainerItemProxy */;
+		};
+		0A46961015B593A7003AB8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A46958D15B58CE1003AB8FD /* WJoyTool */;
+			targetProxy = 0A46960F15B593A7003AB8FD /* PBXContainerItemProxy */;
+		};
+		0A4696EB15B59583003AB8FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A46960615B593A2003AB8FD /* WirtualJoy */;
+			targetProxy = 0A4696EA15B59583003AB8FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A46959015B58CE1003AB8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = WJoyTool;
+			};
+			name = Debug;
+		};
+		0A46959115B58CE1003AB8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = WJoyTool;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		0A46960A15B593A2003AB8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "WirtualJoy-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = WirtualJoy;
+			};
+			name = Debug;
+		};
+		0A46960B15B593A2003AB8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "WirtualJoy-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = WirtualJoy;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		0A4696D115B5953F003AB8FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Test-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+			};
+			name = Debug;
+		};
+		0A4696D215B5953F003AB8FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Test-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB91DA08733DB10010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				MODULE_NAME = com.alxn1.driver.wjoy;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = wjoy;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		1DEB91DB08733DB10010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				MODULE_NAME = com.alxn1.driver.wjoy;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = wjoy;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		1DEB91DE08733DB10010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG";
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DEB91DF08733DB10010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A46959215B58CEC003AB8FD /* Build configuration list for PBXNativeTarget "WJoyTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A46959015B58CE1003AB8FD /* Debug */,
+				0A46959115B58CE1003AB8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A46960C15B593A2003AB8FD /* Build configuration list for PBXNativeTarget "WirtualJoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A46960A15B593A2003AB8FD /* Debug */,
+				0A46960B15B593A2003AB8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A4696D315B5953F003AB8FD /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4696D115B5953F003AB8FD /* Debug */,
+				0A4696D215B5953F003AB8FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91D908733DB10010E9CD /* Build configuration list for PBXNativeTarget "wjoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91DA08733DB10010E9CD /* Debug */,
+				1DEB91DB08733DB10010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91DD08733DB10010E9CD /* Build configuration list for PBXProject "WirtualJoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91DE08733DB10010E9CD /* Debug */,
+				1DEB91DF08733DB10010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
