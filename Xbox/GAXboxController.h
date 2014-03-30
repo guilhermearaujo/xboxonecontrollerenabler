@@ -14,6 +14,11 @@
 
 @property (nonatomic, getter = isConnected) BOOL connected;
 @property (nonatomic) BOOL analogTriggers;
+@property (nonatomic) float leftAnalogXOffset;
+@property (nonatomic) float leftAnalogYOffset;
+@property (nonatomic) float rightAnalogXOffset;
+@property (nonatomic) float rightAnalogYOffset;
+
 @property (weak, nonatomic) id<GAXboxControllerDelegate> delegate;
 
 - (void)connect;
@@ -21,33 +26,33 @@
 - (void)startPolling;
 - (void)stopPolling;
 
-- (int)DPadUp;
-- (int)DPadDown;
-- (int)DPadRight;
-- (int)DPadLeft;
+- (BOOL)DPadUp;
+- (BOOL)DPadDown;
+- (BOOL)DPadRight;
+- (BOOL)DPadLeft;
 
-- (int)A;
-- (int)B;
-- (int)X;
-- (int)Y;
+- (BOOL)A;
+- (BOOL)B;
+- (BOOL)X;
+- (BOOL)Y;
 
-- (int)leftBumper;
-- (int)rightBumper;
+- (BOOL)leftBumper;
+- (BOOL)rightBumper;
 
-- (int)leftAnalogButton;
-- (int)rightAnalogButton;
+- (BOOL)leftAnalogButton;
+- (BOOL)rightAnalogButton;
 
-- (int)back;
-- (int)menu;
-- (int)xboxButton;
+- (BOOL)view;
+- (BOOL)menu;
+- (BOOL)xboxButton;
 
-- (double)leftAnalogX;
-- (double)leftAnalogY;
-- (double)rightAnalogX;
-- (double)rightAnalogY;
+- (float)leftAnalogX;
+- (float)leftAnalogY;
+- (float)rightAnalogX;
+- (float)rightAnalogY;
 
-- (double)leftTrigger;
-- (double)rightTrigger;
+- (float)leftTrigger;
+- (float)rightTrigger;
 
 @end
 

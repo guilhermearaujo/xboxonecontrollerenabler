@@ -6,8 +6,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="GAMainViewController">
             <connections>
+                <outlet property="calibrationButton" destination="2g5-ei-r5W" id="044-xh-UsJ"/>
                 <outlet property="connectButton" destination="Rf4-rF-JCu" id="j0V-ao-ZoA"/>
-                <outlet property="image" destination="VBL-Lp-5K9" id="Yxe-ka-cXs"/>
                 <outlet property="progressLeftAnalogX" destination="W7k-jz-TR5" id="xgd-gO-tn7"/>
                 <outlet property="progressLeftAnalogY" destination="GQz-mb-JxV" id="tcd-TZ-cDB"/>
                 <outlet property="progressLeftTrigger" destination="RdI-wI-LLc" id="AeC-64-2m1"/>
@@ -29,6 +29,7 @@
                 <outlet property="radioView" destination="9qM-Yw-RE9" id="h0f-MF-43j"/>
                 <outlet property="radioX" destination="fgH-y4-7LU" id="uGd-Hd-MCe"/>
                 <outlet property="radioY" destination="gKO-9T-gZx" id="a7q-yH-KUd"/>
+                <outlet property="resetButton" destination="B7G-3r-Fsq" id="ast-mW-pXY"/>
                 <outlet property="statusLabel" destination="huH-f3-ofK" id="bvi-2f-vUE"/>
                 <outlet property="triggerButton" destination="28m-Oa-HTL" id="RWa-D5-gAf"/>
                 <outlet property="view" destination="hP4-st-bud" id="PMD-8n-qvB"/>
@@ -47,18 +48,18 @@
                     <tabViewItems>
                         <tabViewItem label="Controller 1" identifier="1" id="kDg-ET-P2v">
                             <view key="view" ambiguous="YES" id="veh-4b-VBp">
-                                <rect key="frame" x="10" y="33" width="79" height="0.0"/>
+                                <rect key="frame" x="10" y="33" width="492" height="193"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <box autoresizesSubviews="NO" fixedFrame="YES" title="Settings" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="d4U-qW-dMH">
-                                        <rect key="frame" x="3" y="-168" width="143" height="170"/>
+                                        <rect key="frame" x="3" y="25" width="143" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView">
                                             <rect key="frame" x="1" y="1" width="141" height="168"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28m-Oa-HTL">
-                                                    <rect key="frame" x="16" y="11" width="109" height="24"/>
+                                                    <rect key="frame" x="16" y="80" width="109" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <segmentedCell key="cell" enabled="NO" alignment="left" style="rounded" trackingMode="selectOne" id="PeJ-KH-Mme">
                                                         <font key="font" metaFont="system"/>
@@ -72,7 +73,7 @@
                                                     </connections>
                                                 </segmentedControl>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QUV-FH-dee">
-                                                    <rect key="frame" x="25" y="42" width="90" height="17"/>
+                                                    <rect key="frame" x="25" y="111" width="90" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Trigger mode" id="PNw-BL-DVS">
                                                         <font key="font" metaFont="system"/>
@@ -91,24 +92,41 @@
                                                         <action selector="toggleConnection:" target="-2" id="3hS-AO-Bqv"/>
                                                     </connections>
                                                 </button>
-                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VBL-Lp-5K9">
-                                                    <rect key="frame" x="38" y="63" width="64" height="64"/>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2g5-ei-r5W">
+                                                    <rect key="frame" x="12" y="40" width="117" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="off" id="3o0-8m-RGJ"/>
-                                                </imageView>
+                                                    <buttonCell key="cell" type="push" title="Calibrate" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Zh3-fd-Msf">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="startCalibration:" target="-2" id="G3f-yb-ajn"/>
+                                                    </connections>
+                                                </button>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B7G-3r-Fsq">
+                                                    <rect key="frame" x="12" y="7" width="117" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eed-WX-7U9">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="resetCalibration:" target="-2" id="uFY-aA-vGy"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </box>
                                     <box fixedFrame="YES" title="Buttons" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="aaB-R4-Gwu">
-                                        <rect key="frame" x="148" y="-168" width="341" height="170"/>
+                                        <rect key="frame" x="148" y="25" width="341" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView">
                                             <rect key="frame" x="1" y="1" width="339" height="168"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <progressIndicator fixedFrame="YES" maxValue="1023" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="RdI-wI-LLc">
+                                                <progressIndicator fixedFrame="YES" maxValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="RdI-wI-LLc">
                                                     <rect key="frame" x="216" y="139" width="105" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </progressIndicator>
@@ -194,7 +212,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <progressIndicator fixedFrame="YES" maxValue="1023" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="KLx-D7-oAB">
+                                                <progressIndicator fixedFrame="YES" maxValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="KLx-D7-oAB">
                                                     <rect key="frame" x="216" y="114" width="105" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </progressIndicator>
@@ -207,7 +225,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <progressIndicator fixedFrame="YES" minValue="-32768" maxValue="32511" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="W7k-jz-TR5">
+                                                <progressIndicator fixedFrame="YES" minValue="-1" maxValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="W7k-jz-TR5">
                                                     <rect key="frame" x="216" y="88" width="105" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </progressIndicator>
@@ -220,7 +238,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <progressIndicator fixedFrame="YES" minValue="-32768" maxValue="32511" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="GQz-mb-JxV">
+                                                <progressIndicator fixedFrame="YES" minValue="-1" maxValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="GQz-mb-JxV">
                                                     <rect key="frame" x="216" y="63" width="105" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </progressIndicator>
@@ -233,7 +251,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <progressIndicator fixedFrame="YES" minValue="-32768" maxValue="32511" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="zIh-Wm-8S7">
+                                                <progressIndicator fixedFrame="YES" minValue="-1" maxValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="zIh-Wm-8S7">
                                                     <rect key="frame" x="216" y="38" width="105" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </progressIndicator>
@@ -246,7 +264,7 @@
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
-                                                <progressIndicator fixedFrame="YES" minValue="-32768" maxValue="32511" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="udD-Sa-HIO">
+                                                <progressIndicator fixedFrame="YES" minValue="-1" maxValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="udD-Sa-HIO">
                                                     <rect key="frame" x="216" y="13" width="105" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </progressIndicator>
@@ -265,7 +283,7 @@
                                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </box>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="huH-f3-ofK">
-                                        <rect key="frame" x="4" y="-189" width="484" height="17"/>
+                                        <rect key="frame" x="4" y="4" width="484" height="17"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Controller disconnected." id="NDW-iA-Tjd">
                                             <font key="font" metaFont="system"/>
@@ -281,7 +299,4 @@
             </subviews>
         </view>
     </objects>
-    <resources>
-        <image name="off" width="64" height="64"/>
-    </resources>
 </document>

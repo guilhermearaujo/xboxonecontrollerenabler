@@ -9,6 +9,8 @@
 #import "GAXboxController.h"
 #import "GAXboxControllerCommunication.h"
 
+#define kHysteresis 0.085
+
 @interface GAXboxController () <GAXboxControllerCommunicationDelegate>
 
 @property (strong, nonatomic) GAXboxControllerCommunication *communication;
@@ -31,6 +33,11 @@
   communication = [[GAXboxControllerCommunication alloc] init];
   [communication setDelegate:self];
   
+  _leftAnalogXOffset = 0;
+  _leftAnalogYOffset = 0;
+  _rightAnalogXOffset = 0;
+  _rightAnalogYOffset = 0;
+  
   return self;
 }
 
@@ -43,7 +50,7 @@
   
   else if ((r = [communication openDevice]))
     [_delegate controllerConnectionFailed:self withError:@"Could not open device." errorCode:r];
-
+  
   else if ((r = [communication configureInterfaceParameters]))
     [_delegate controllerConnectionFailed:self withError:@"Could not configure device." errorCode:r];
   
@@ -80,52 +87,66 @@
 
 #pragma mark - Buttons & Axes Outputs
 
-- (int)DPadUp{ return buttonMap.dpad_up; }
+- (BOOL)DPadUp{ return buttonMap.dpad_up == 1; }
 
-- (int)DPadDown { return buttonMap.dpad_down; }
+- (BOOL)DPadDown { return buttonMap.dpad_down == 1; }
 
-- (int)DPadRight { return buttonMap.dpad_right; }
+- (BOOL)DPadRight { return buttonMap.dpad_right == 1; }
 
-- (int)DPadLeft { return buttonMap.dpad_left; }
+- (BOOL)DPadLeft { return buttonMap.dpad_left == 1; }
 
-- (int)A { return buttonMap.a; }
+- (BOOL)A { return buttonMap.a == 1; }
 
-- (int)B { return buttonMap.b; }
+- (BOOL)B { return buttonMap.b == 1; }
 
-- (int)X { return buttonMap.x; }
+- (BOOL)X { return buttonMap.x == 1; }
 
-- (int)Y { return buttonMap.y; }
+- (BOOL)Y { return buttonMap.y == 1; }
 
-- (int)leftBumper { return buttonMap.bumper_left; }
+- (BOOL)leftBumper { return buttonMap.bumper_left == 1; }
 
-- (int)rightBumper { return buttonMap.bumper_right; }
+- (BOOL)rightBumper { return buttonMap.bumper_right == 1; }
 
-- (int)leftAnalogButton { return buttonMap.stick_left_click; }
+- (BOOL)leftAnalogButton { return buttonMap.stick_left_click == 1; }
 
-- (int)rightAnalogButton { return buttonMap.stick_right_click; }
+- (BOOL)rightAnalogButton { return buttonMap.stick_right_click == 1; }
 
-- (int)back { return buttonMap.view; }
+- (BOOL)view { return buttonMap.view == 1; }
 
-- (int)menu { return buttonMap.menu; }
+- (BOOL)menu { return buttonMap.menu == 1; }
 
-- (int)xboxButton { return buttonMap.home; }
+- (BOOL)xboxButton { return buttonMap.home == 1; }
 
-- (double)leftAnalogX { return buttonMap.stick_left_x; }
-
-- (double)leftAnalogY { return buttonMap.stick_left_y; }
-
-- (double)rightAnalogX { return buttonMap.stick_right_x; }
-
-- (double)rightAnalogY { return buttonMap.stick_right_y; }
-
-- (double)leftTrigger {
-  return _analogTriggers ? buttonMap.trigger_left :
-          buttonMap.trigger_left > 0 ? 1023 : 0;
+- (float)leftAnalogX {
+  float v = (float) buttonMap.stick_left_x / ((1 << 15) - 1) - _leftAnalogXOffset;
+  return (fabs(v) < kHysteresis) ? 0 : v;
 }
 
-- (double)rightTrigger {
-  return _analogTriggers ? buttonMap.trigger_right :
-          buttonMap.trigger_right > 0 ? 1023 : 0;
+- (float)leftAnalogY {
+  float v = (float) buttonMap.stick_left_y / ((1 << 15) - 1) - _leftAnalogYOffset;
+  return (fabs(v) < kHysteresis) ? 0 : v;
+}
+
+- (float)rightAnalogX {
+  float v = (float) buttonMap.stick_right_x / ((1 << 15) - 1) - _rightAnalogXOffset;
+  return (fabs(v) < kHysteresis) ? 0 : v;
+}
+
+- (float)rightAnalogY {
+  float v = (float) buttonMap.stick_right_y / ((1 << 15) - 1) - _rightAnalogYOffset;
+  return (fabs(v) < kHysteresis) ? 0 : v;
+}
+
+- (float)leftTrigger {
+  if (_analogTriggers)
+    return (float) buttonMap.trigger_left / ((1 << 10) - 1);
+  return buttonMap.trigger_left > 0 ? 1 : 0;
+}
+
+- (float)rightTrigger {
+  if (_analogTriggers)
+    return (float) buttonMap.trigger_right / ((1 << 10) - 1);
+  return buttonMap.trigger_right > 0 ? 1 : 0;
 }
 
 @end
