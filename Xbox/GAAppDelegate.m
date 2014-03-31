@@ -12,6 +12,7 @@
 @interface GAAppDelegate ()
 
 @property (strong, nonatomic) GAMainViewController *masterViewController;
+@property (strong) id activity;
 
 @end
 
@@ -24,6 +25,10 @@
 
   [self.window.contentView addSubview:self.masterViewController.view];
   self.masterViewController.view.frame = ((NSView*)self.window.contentView).bounds;
+  
+  if ([[NSProcessInfo processInfo] respondsToSelector:@selector(beginActivityWithOptions:reason:)]) {
+    self.activity = [[NSProcessInfo processInfo] beginActivityWithOptions:0x00FFFFFF reason:@"Receiving Controller Data"];
+  }
 }
 
 @end
