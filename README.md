@@ -34,6 +34,13 @@ Feel free to [report issues](https://github.com/guilhermearaujo/xboxonecontrolle
 As long as I have time to learn more on how to implement the stuff it requires, improvements will be done.
 Usability and compatibility are the main goals for now. Additional controllers, automatic connection, bells and whistles will come later.
 
+How to build?
+-------------
+
+The only requirement to compile this project is [libusb](http://www.libusb.org).
+
+You can easily install it with [Homebrew](http://brew.sh) by entering `brew install libusb` on your terminal.
+
 I'd like to contribute!
 -----------------------
 
