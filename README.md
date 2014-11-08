@@ -15,7 +15,7 @@ This application communicates with the Xbox One Controller and uses a Virtual Jo
 Where can I get it?
 -------------------
 
-Get your compiled copy [here](https://www.dropbox.com/sh/cx4m6so6vl5j4w7/V91El05FQ_).
+Get your compiled copy [here](https://github.com/guilhermearaujo/xboxonecontrollerenabler/releases).
 Source code is available on [GitHub](https://github.com/guilhermearaujo/xboxonecontrollerenabler).
 
 What's under the hood?

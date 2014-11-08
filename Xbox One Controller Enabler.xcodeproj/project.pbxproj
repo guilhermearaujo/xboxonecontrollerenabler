@@ -410,6 +410,7 @@
 					/usr/local/lib,
 					"$(PROJECT_DIR)/Xbox",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-lusb-1.0";
 				PRODUCT_NAME = "Xbox One Controller Enabler";
 				WRAPPER_EXTENSION = app;
@@ -434,6 +435,7 @@
 					/usr/local/lib,
 					"$(PROJECT_DIR)/Xbox",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-lusb-1.0";
 				PRODUCT_NAME = "Xbox One Controller Enabler";
 				WRAPPER_EXTENSION = app;
