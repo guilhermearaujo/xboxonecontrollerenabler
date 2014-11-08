@@ -16,6 +16,7 @@
 		7916EB0818E771850064C241 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FB06BC18E397C70007BAD1 /* Cocoa.framework */; };
 		79A6C75018E787C70050CD3A /* WirtualJoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A6C74F18E787C70050CD3A /* WirtualJoy.framework */; };
 		79A6C75118E787CD0050CD3A /* WirtualJoy.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 79A6C74F18E787C70050CD3A /* WirtualJoy.framework */; };
+		79BB00101A0DB5FD0088E155 /* libusb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BB000E1A0DB52D0088E155 /* libusb-1.0.a */; };
 		79FB06C718E397C70007BAD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79FB06C518E397C70007BAD1 /* InfoPlist.strings */; };
 		79FB06C918E397C70007BAD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FB06C818E397C70007BAD1 /* main.m */; };
 		79FB06CD18E397C70007BAD1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 79FB06CB18E397C70007BAD1 /* Credits.rtf */; };
@@ -63,6 +64,7 @@
 		7916EAF518E76BD80064C241 /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
 		7916EAF618E76BD80064C241 /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
 		79A6C74F18E787C70050CD3A /* WirtualJoy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WirtualJoy.framework; path = "../../../Library/Developer/Xcode/DerivedData/Xbox_One_Controller_Enabler-eyxnkpueyftvadeltapuzbfrimys/Build/Products/Debug/WirtualJoy.framework"; sourceTree = "<group>"; };
+		79BB000E1A0DB52D0088E155 /* libusb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libusb-1.0.a"; sourceTree = "<group>"; };
 		79FB06B918E397C70007BAD1 /* Xbox One Controller Enabler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xbox One Controller Enabler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FB06BC18E397C70007BAD1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		79FB06BF18E397C70007BAD1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BB00101A0DB5FD0088E155 /* libusb-1.0.a in Frameworks */,
 				79A6C75018E787C70050CD3A /* WirtualJoy.framework in Frameworks */,
 				7916EB0818E771850064C241 /* Cocoa.framework in Frameworks */,
 				7916EB0718E771820064C241 /* IOKit.framework in Frameworks */,
@@ -160,6 +163,7 @@
 				79FB06D118E397C70007BAD1 /* MainMenu.xib */,
 				79FB074018E62CFC0007BAD1 /* XboxOneButtonMap.h */,
 				79FB06D418E397C70007BAD1 /* Images.xcassets */,
+				79BB000E1A0DB52D0088E155 /* libusb-1.0.a */,
 				79FB06C318E397C70007BAD1 /* Supporting Files */,
 			);
 			path = Xbox;
@@ -402,7 +406,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xbox/Xbox One Controller Enabler-Prefix.pch";
 				INFOPLIST_FILE = "Xbox/Xbox One Controller Enabler-Info.plist";
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/Xbox",
+				);
 				OTHER_LDFLAGS = "-lusb-1.0";
 				PRODUCT_NAME = "Xbox One Controller Enabler";
 				WRAPPER_EXTENSION = app;
@@ -423,7 +430,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Xbox/Xbox One Controller Enabler-Prefix.pch";
 				INFOPLIST_FILE = "Xbox/Xbox One Controller Enabler-Info.plist";
-				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(PROJECT_DIR)/Xbox",
+				);
 				OTHER_LDFLAGS = "-lusb-1.0";
 				PRODUCT_NAME = "Xbox One Controller Enabler";
 				WRAPPER_EXTENSION = app;

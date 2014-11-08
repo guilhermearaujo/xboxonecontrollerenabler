@@ -37,9 +37,9 @@ Usability and compatibility are the main goals for now. Additional controllers, 
 How to build?
 -------------
 
-The only requirement to compile this project is [libusb](http://www.libusb.org).
+Update: a [libusb](http://www.libusb.org) installation is no longer needed as the library has been included in the project.
 
-You can easily install it with [Homebrew](http://brew.sh) by entering `brew install libusb` on your terminal.
+Just open the project in Xcode and run it!
 
 I'd like to contribute!
 -----------------------
