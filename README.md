@@ -18,6 +18,12 @@ Where can I get it?
 Get your compiled copy [here](https://github.com/guilhermearaujo/xboxonecontrollerenabler/releases).
 Source code is available on [GitHub](https://github.com/guilhermearaujo/xboxonecontrollerenabler).
 
+For OS X 10.10 Yosemite users
+------------------
+
+For extended compatibility, you will need to enable kext dev mode. To do so, run the following command on your terminal:  
+`sudo nvram boot-args=kext-dev-mode=1`
+
 What's under the hood?
 ----------------------
 
