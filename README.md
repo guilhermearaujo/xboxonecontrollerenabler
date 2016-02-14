@@ -3,6 +3,11 @@ Xbox One Controller Enabler
 
 ![alt tag](https://raw.github.com/guilhermearaujo/xboxonecontrollerenabler/master/screenshot.png)
 
+
+Project deprecated
+------------------
+Use [360Controller](https://github.com/360Controller/360Controller/) instead (it supports Xbox One controllers).
+
 What is it?
 -----------
 
